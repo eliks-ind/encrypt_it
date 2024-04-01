@@ -55,7 +55,7 @@ function App() {
         </div>
         
         <div className="text_output">
-          <p className="p_output">Encrypted or decrypted text will appear here...</p>
+          <p className="p_output">Ti pidor</p>
         </div>
 
       </div>
