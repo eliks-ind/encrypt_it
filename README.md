@@ -1,8 +1,8 @@
-# Getting Started with Create React App
+# First React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##Access
 
-## Available Scripts
+You can open and use it using this link [Open](https://encrypt-it.netlify.app/).
 
 In the project directory, you can run:
 
