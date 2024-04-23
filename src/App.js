@@ -14,7 +14,7 @@ function App() {
       let b = String.fromCharCode(text.charCodeAt(i) + 2);
       result_array.push(b);
     }
-    document.getElementsByClassName("p_outputP")[0].innerText = result_array.join('');
+    document.getElementsByClassName("p_output")[0].innerText = result_array.join('');
   }
   
   const decrypt = () => {
