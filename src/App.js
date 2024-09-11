@@ -15,6 +15,7 @@ function App() {
       result_array.push(b);
     }
     document.getElementsByClassName("p_output")[0].innerText = result_array.join('');
+    document.getElementsByClassName('isCopied')[0].style.display = "none";
   }
   
   const decrypt = () => {
@@ -26,12 +27,13 @@ function App() {
       result_array.push(b);
     }
     document.getElementsByClassName("p_output")[0].innerText = result_array.join('');
+    document.getElementsByClassName('isCopied')[0].style.display = "none";
   }
   
   const copy = () => {
     let text_output = document.getElementsByClassName("p_output")[0].innerText;
     navigator.clipboard.writeText(text_output);
-    alert("Copied succesfully!");
+    document.getElementsByClassName('isCopied')[0].style.display = "block";
   }
 
   return (
@@ -51,13 +53,13 @@ function App() {
       <div className="text_output_container">
 
         <div className="copy_panel">
+        <p className='isCopied'>Copied succesfully!</p>
         <button className="copy_btn" onClick={copy}><img src={logo_copy} className="copy_img" alt="copy" /></button>
         </div>
         
         <div className="text_output">
           <p className="p_output">Encrypted or decrypted text will appear here...</p>
         </div>
-
       </div>
       </main>
 
@@ -65,10 +67,9 @@ function App() {
       <h5 className="made_using">Made using</h5>
       <div className="made_using_icons">
         <img src={logo_html} className="html" alt="html" />
-        <img src={logo_css} className="css" alt="html" />
+        <img src={logo_css} className="css" alt="css" />
         <img src={logo_js} className="js" alt="js" />
         <img src={logo_react} className="React" alt="react" />
-
       </div>
       </footer>
 

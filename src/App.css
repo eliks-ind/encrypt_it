@@ -17,17 +17,13 @@
   background-color: #3b414d;
 }
 
-#root {
+body {
   height: 100vh;
-}
-
-.App {
+  background-color: #282c34;
   text-align: center;
   justify-content: center;
   align-items: center;
   font-family: 'Poppins', sans-serif;
-  height: 100%;
-  background-color: #282c34;
 }
 
 .App-header {
@@ -46,7 +42,6 @@
 }
 
 .main {
-  background-color: #282c34;
   color: white;
   padding-top: 10px;
 }
@@ -93,10 +88,11 @@
   height: 50px;
   background-color: #3b414d;
   color: white;
-  margin-right: 1px;
+  margin-right: 5px;
   font-size: 17.5px;
   border: 0;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .decrypt_button {
@@ -106,10 +102,11 @@
   height: 50px;
   background-color: #3b414d;
   color: white;
-  margin-left: 1px;
+  margin-left: 5px;
   font-size: 17.5px;
   border: 0;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .text_output_container {
@@ -119,7 +116,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
-  min-height: 500px;
+  min-height: 30vh;
 }
 
 .copy_panel {
@@ -130,6 +127,7 @@
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
   vertical-align: middle;
+  display: flex;
 }
 
 .copy_btn {
@@ -141,6 +139,7 @@
   border: 0;
   margin-top: 2.5px;
   margin-right: 2.5px;
+  cursor: pointer;
 }
 
 .copy_img {
@@ -148,6 +147,12 @@
   float: right;
 }
 
+.isCopied {
+  display: none;
+  margin: auto 0;
+  margin-right: 10px;
+  padding: 0;
+}
 .text_output {
   text-align: left;
   min-height: 450px;
@@ -157,16 +162,15 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: auto;
-  
 }
 
 .p_output {
   margin: 0;
   font-size: 17.5px;
-  display: flex;
-  overflow: scroll;
   height: 100%;
   width: 100%;
+  white-space: pre-wrap;
+  word-wrap: break-word; 
 }
 
 
